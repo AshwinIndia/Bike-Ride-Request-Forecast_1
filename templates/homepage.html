@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Demand Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static\script.js"></script> 
+</head>
+<body>
+    <h1>Welcome, {{ current_user.username }}!</h1>
+    <div class="container">   
+        <h2>Bike Demand Prediction</h2>    
+        <form method="post">
+            <label for="date_time">Date and Time:</label>
+            <input type="datetime-local" id="date_time" name="date_time" required><br><br>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required><br><br>
+            <label for="humidity">Humidity:</label>
+            <input type="number" id="humidity" name="humidity" required><br><br>
+            <label for="weather_condition">Weather Condition:</label>
+            <select id="weather_condition" name="weather_condition" required>
+                <option value="sunny">Sunny</option>
+                <option value="cloudy">Cloudy</option>
+                <option value="rainy">Rainy</option>
+            </select><br><br>
+            <label for="hour_of_day">Hour of Day:</label>
+            <input type="number" id="hour_of_day" name="hour_of_day" required><br><br>
+            <label for="day_of_week">Day of Week:</label>
+            <select id="day_of_week" name="day_of_week" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select><br><br>
+            <label for="is_weekend">Is Weekend:</label>
+            <select id="is_weekend" name="is_weekend" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+            <label for="is_holiday">Is Holiday:</label>
+            <select id="is_holiday" name="is_holiday" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+        <!-- Logout Button -->
+    <div class="logout-box">
+        <form action="{{ url_for('logout') }}" method="POST">
+            <button type="submit" class="btn btn-danger" style="width: 100%;">Logout</button>
+        </form>
+    </div>   
+</body>
+<script src="static\script.js"></script> <!-- Your JS file -->
+</html>

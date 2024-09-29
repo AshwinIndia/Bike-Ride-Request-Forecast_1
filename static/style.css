@@ -1,0 +1,75 @@
+/* style.css */
+
+/* General body style */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #4c7e9b;
+}
+
+.navbar-brand {
+    color: blue !important;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: red !important;
+}
+
+/* Container styles */
+.container {
+    margin-top: 20px;
+}
+
+/* Form styles */
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+.logout-box {
+    background-color: red;        /* Red background for the logout button */
+    padding: 15px 15px;           /* Padding: 15px top/bottom and 30px left/right */
+    text-align: justify;           /* Center the text */
+    border-radius: 2px;           /* Rounded corners */
+    width: 100px;                 /* Adjust the width of the button */
+    margin-top: 20px;             /* Add some margin to the top */
+    font-size: 18px;              /* Font size adjustment for the button */
+}
+        /* Style for the body to center the content */
+.container {
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional: border for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    background-color: #4732320e;
+}
